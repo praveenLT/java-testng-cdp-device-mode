@@ -1,4 +1,4 @@
-# Java TestNG Selenium 
+# How to set device mode using CDP in Java-TestNG automation test on LambdaTest
 
 ### Environment Setup
 
