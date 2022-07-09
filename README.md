@@ -34,7 +34,16 @@ Set LambdaTest Username and Access Key in environment variables.
    $ set LT_USERNAME="YOUR_USERNAME"
    $ set LT_ACCESS_KEY="YOUR ACCESS KEY"
    ```
-    
+### Override device mode
+To override device mode, the following code can be used
+```java
+DevTools devTools = ((HasDevTools) driver).getDevTools();
+devTools.createSession();
+
+devTools.send(Emulation.setDeviceMetricsOverride(414, 736, 50, true, Optional.empty(), Optional.empty(),
+   Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
+   Optional.empty(), Optional.empty()));
+```
 ### Running Tests
 
 ```
